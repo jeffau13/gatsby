@@ -35,5 +35,6 @@ module.exports = {
         name: "posts",
       },
     },
+    "gatsby-transformer-remark",
   ],
 };
