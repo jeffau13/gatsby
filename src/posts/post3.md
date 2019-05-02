@@ -1,10 +1,10 @@
 ---
-slug: "/first-post"
-date: "2019-04-23"
-title: "Our First Post"
+slug: "/third-post"
+date: "2019-05-03"
+title: "My third post! "
 ---
 
-# Hello!
+# hey :)!
 
 Lorem ipsum dolor amet locavore hella deep v kogi pickled. Cornhole austin ramps wayfarers scenester williamsburg. Af paleo heirloom literally, polaroid keytar locavore woke bicycle rights. Knausgaard DIY godard, green juice bitters subway tile iPhone taiyaki adaptogen. Iceland cloud bread lumbersexual, pour-over pok pok meh hot chicken organic woke. Meggings echo park twee iceland flannel. Shoreditch hell of lomo typewriter microdosing chia meditation flexitarian gentrify squid blog swag kombucha.
 
