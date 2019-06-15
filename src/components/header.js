@@ -15,6 +15,7 @@ const HeaderContainer = styled.div`
   padding: 1rem;
   img {
     margin-bottom: 0;
+    margin-left: 1rem;
   }
 `;
 
