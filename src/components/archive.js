@@ -25,7 +25,7 @@ const Archive = () => (
     render={({ allMarkdownRemark }) => (
       <>
         <aside>
-          <h3>Archive</h3>
+          <h3>Recent Posts</h3>
           <ul>
             {allMarkdownRemark.edges.map(edge => (
               <li key={edge.node.frontmatter.slug}>
