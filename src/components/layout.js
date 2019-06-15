@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components";
+import { Spring } from "react-spring/renderprops";
 import Header from "./header";
 import Archive from "./archive";
 import "./layout.css";
@@ -43,9 +44,18 @@ const Layout = ({ children, location }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        {location.pathname === "/" && (
-          <Img fluid={data.file.childImageSharp.fluid} />
-        )}
+
+        <Spring
+          from={{ height: location.pathname === "/" ? 200 : 300 }}
+          to={{ height: location.pathname === "/" ? 300 : 200 }}
+        >
+          {styles => (
+            <div style={{ overflow: "hidden", ...styles }}>
+              <Img fluid={data.file.childImageSharp.fluid} />
+            </div>
+          )}
+        </Spring>
+
         <MainLayout>
           <div>{children}</div>
           <Archive />
