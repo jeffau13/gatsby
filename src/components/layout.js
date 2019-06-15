@@ -22,7 +22,7 @@ const MainLayout = styled.main`
   grid-gap: 30px;
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -43,7 +43,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Img fluid={data.file.childImageSharp.fluid} />
+        {location.pathname === "/" && (
+          <Img fluid={data.file.childImageSharp.fluid} />
+        )}
         <MainLayout>
           <div>{children}</div>
           <Archive />
