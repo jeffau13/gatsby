@@ -3,8 +3,10 @@ module.exports = {
     title: `Jeff's Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: "https://sad-bardeen-8641d4.netlify.com",
   },
   plugins: [
+    "gatsby-plugin-sitemap",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -37,6 +39,7 @@ module.exports = {
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-netlify",
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-netlify", //has to be last plugin
   ],
 };
